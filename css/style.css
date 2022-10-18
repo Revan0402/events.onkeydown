@@ -1,0 +1,18 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+}
+.main{
+    width: 100px;
+    min-height: 20px;
+    float: left;
+    background: red;
+    position: fixed;
+    transition: 1s;
+}
+.main img{
+    width: 100%;
+    min-height: 20px;
+    float: left;
+
+}
