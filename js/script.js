@@ -32,40 +32,32 @@
 
 
 
+    pos_left = 0
+    pos_top = 0
 
 
+    onkeydown = function(r){
 
 
+        if(r.key == "ArrowRight"){
+            document.getElementById("myDiv").style.transform = "rotateY(0deg)"
+            document.getElementById("myDiv").style.left = pos_left+"px"
+            pos_left += 30
+        }
 
+        if(r.key == "ArrowLeft"){
+            document.getElementById("myDiv").style.transform = "rotateY(180deg)"
+            document.getElementById("myDiv").style.left = pos_left+"px"
+            pos_left += -30
+        }
 
+        if(r.key == "ArrowUp"){
+            document.getElementById("myDiv").style.top = pos_top+"px"
+            pos_top += -30
+        }
 
-
-pos_left = 0
-pos_top = 0
-
-
-onkeydown = function(r){
-
-
-    if(r.key == "ArrowRight"){
-        document.getElementById("myDiv").style.transform = "rotateY(0deg)"
-        document.getElementById("myDiv").style.left = pos_left+"px"
-        pos_left += 30
+        if(r.key == "ArrowDown"){
+            document.getElementById("myDiv").style.top = pos_top+"px"
+            pos_top += 30
+        }
     }
-
-    if(r.key == "ArrowLeft"){
-        document.getElementById("myDiv").style.transform = "rotateY(180deg)"
-        document.getElementById("myDiv").style.left = pos_left+"px"
-        pos_left += -30
-    }
-
-    if(r.key == "ArrowUp"){
-        document.getElementById("myDiv").style.top = pos_top+"px"
-        pos_top += -30
-    }
-
-    if(r.key == "ArrowDown"){
-        document.getElementById("myDiv").style.top = pos_top+"px"
-        pos_top += 30
-    }
-}

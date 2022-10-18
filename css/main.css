@@ -1,0 +1,10 @@
+.main{
+    width: 200px;
+    height: 200px;
+    background: red;
+    float: left;
+    background-image: url(../img/pablo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
