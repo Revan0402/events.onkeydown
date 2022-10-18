@@ -1,18 +1,19 @@
 body{
     margin: 0 auto;
     padding: 0px;
+    background: url(https://s1.1zoom.ru/b5050/575/363027-admin_1366x768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .main{
-    width: 100px;
-    min-height: 20px;
+    width: 100%;
+    height: 100%;
     float: left;
-    background: red;
     position: fixed;
     transition: 1s;
 }
 .main img{
-    width: 100%;
-    min-height: 20px;
+    width: 660px;
+    min-height: 200px;
     float: left;
-
 }
